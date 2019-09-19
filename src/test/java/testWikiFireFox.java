@@ -14,7 +14,6 @@ public class testWikiFireFox {
 
     @BeforeClass
     public static void setupClass() {
-        //WebDriverManager.firefoxdriver().version("0.19.1").setup();
         WebDriverManager.firefoxdriver().setup();
     }
 
@@ -33,13 +32,10 @@ public class testWikiFireFox {
     @Test
     public void test() throws InterruptedException {
         driver.get("https://en.wikipedia.org");
-        Thread.sleep(3000);
-
         WebElement webElement = driver.findElement(By.xpath("//a[@href='/wiki/Wikipedia:About']"));
         webElement.click();
         Thread.sleep(3000);
         WebElement logo = driver.findElement(By.xpath("//h1[@id='firstHeading']"));
         Assert.assertTrue(logo.isDisplayed());
-
     }
 }
