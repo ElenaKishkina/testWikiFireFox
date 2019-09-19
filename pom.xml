@@ -9,7 +9,6 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -26,8 +25,5 @@
             <artifactId>webdrivermanager</artifactId>
             <version>3.7.0</version>
         </dependency>
-
     </dependencies>
-
-
 </project>
